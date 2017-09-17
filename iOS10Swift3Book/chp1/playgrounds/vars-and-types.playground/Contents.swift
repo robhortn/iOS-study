@@ -61,7 +61,53 @@ print(groceryList)
 
 // Dictionaries
 var screenSizeInInches = ["iPhone 7" : 4.7, "iPhone 7 Plus" : 5.5, "iPad PRO" : 12.9]
-print (screenSizeInInches["iPad PRO"])
+print (screenSizeInInches["iPad PRO"]!)
+screenSizeInInches["iPad Air 2"] = 9.7
+
+// Control flow
+// Loops
+// While and Repeat-While
+
+var finished = false
+var waitTime = 0
+while (!finished){
+    if (waitTime == 5) { break }
+    print("\(waitTime) loading ...")
+    waitTime += 1
+}
+
+var waitTime2 = 0
+repeat {
+    print("\(waitTime2) loop from repeat-while")
+    waitTime2 += 1
+} while waitTime2 < 3
+
+// for-in
+for screen in screenSizeInInches {
+    print(screen)
+}
+
+for item in groceryList {
+    print(item)
+}
+
+// Functions
+
+func printCompanyName(name: String) -> String {
+    return(name)
+}
+
+printCompanyName(name: "code12studios")
+
+func buildName(firstName: String, lastName: String) -> String {
+    return("\(firstName) \(lastName)")
+}
+
+print(buildName(firstName: "Rob", lastName: "Horton"))
+
+
+
+
 
 
 
