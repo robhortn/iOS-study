@@ -58,3 +58,8 @@ groceryList.insert("Spinach leaves", at: 3)
 groceryList[3] = "Baby Spinach"
 
 print(groceryList)
+
+// Dictionaries
+var screenSizeInInches = ["iPhone 7" : 4.7, "iPhone 7 Plus" : 5.5, "iPad PRO" : 12.9]
+print (screenSizeInInches["iPad PRO"])
+
