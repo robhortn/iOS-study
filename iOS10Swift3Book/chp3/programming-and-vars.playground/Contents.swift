@@ -29,11 +29,11 @@ func canDivideSlices(numberOfSlices: Int, numberOfFriends: Int) -> Bool {
     return numberOfSlices % numberOfFriends == 0
 }
 
-var slices = 10
-var friends = 3
+var slices = 27
+var friends = 9
 
-var canDivideResult = canDivideSlices(numberOfSlices: slices, numberOfFriends: friends) == true ? "Sweet! That works out!" : "Bummer. That won't work. :("
+var canDivideResult = canDivideSlices(numberOfSlices: slices, numberOfFriends: friends) == true ? "Sweet! That works out! Each friend can have \(slices / friends) slices." : "Bummer. That won't work. :("
 
-print("I have \(friends) friends that I need to evenly divide \(slices) of pizza between. \(canDivideResult)")
+print("I have \(friends) friends that I need to evenly divide \(slices) slices of pizza between. \(canDivideResult)")
 
 
