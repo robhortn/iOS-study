@@ -36,4 +36,12 @@ var canDivideResult = canDivideSlices(numberOfSlices: slices, numberOfFriends: f
 
 print("I have \(friends) friends that I need to evenly divide \(slices) slices of pizza between. \(canDivideResult)")
 
+// Dictionaries
+
+var movieReleaseYears: [String: Int] = ["Star Wars": 1977, "Empire Strikes Back": 1980, "Return of the Jedi": 1983]
+
+for (movieTitle, releaseYear) in movieReleaseYears {
+    print("\(movieTitle) (\(releaseYear))")
+    
+}
 
