@@ -25,5 +25,15 @@ var message: String = "My name is \(myName). I am \(myAge) years old. Where I li
 
 print(message)
 
+func canDivideSlices(numberOfSlices: Int, numberOfFriends: Int) -> Bool {
+    return numberOfSlices % numberOfFriends == 0
+}
+
+var slices = 10
+var friends = 3
+
+var canDivideResult = canDivideSlices(numberOfSlices: slices, numberOfFriends: friends) == true ? "Sweet! That works out!" : "Bummer. That won't work. :("
+
+print("I have \(friends) friends that I need to evenly divide \(slices) of pizza between. \(canDivideResult)")
 
 
