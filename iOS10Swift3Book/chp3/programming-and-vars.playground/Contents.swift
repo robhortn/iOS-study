@@ -42,6 +42,5 @@ var movieReleaseYears: [String: Int] = ["Star Wars": 1977, "Empire Strikes Back"
 
 for (movieTitle, releaseYear) in movieReleaseYears {
     print("\(movieTitle) (\(releaseYear))")
-    
 }
 
