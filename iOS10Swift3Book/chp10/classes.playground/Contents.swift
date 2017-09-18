@@ -40,7 +40,7 @@ print(ford.model)
 var someonesAge = 20
 
 func passByVal(age: Int) {
-    //age = 10  // This is NOT allowed because age is define as a 'let constant' and cannot be changed.
+    //age = 10  // This is NOT allowed because age is defined as a 'let constant' and cannot be changed.
 }
 
 
