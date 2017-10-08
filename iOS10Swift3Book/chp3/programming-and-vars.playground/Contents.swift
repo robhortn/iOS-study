@@ -18,7 +18,7 @@ print(bankAccountBalance >= itemPrice ? "Item purchased!" : cashRegisterMessage)
 var myName: String = "Rob Horton"
 var myAge: Int = 47
 var currentTemp: Double = 74
-var enjoySwiftProgramming: Bool = true
+var enjoySwiftProgramming: Bool = false
 var doLikeSwift = enjoySwiftProgramming == true ? "YES!" : "not really. :("
 
 var message: String = "My name is \(myName). I am \(myAge) years old. Where I live, it is currently \(currentTemp) degrees outside.  If you were to ask me if I enjoy programming in Swift I would have to say, \(doLikeSwift)"
@@ -29,8 +29,8 @@ func canDivideSlices(numberOfSlices: Int, numberOfFriends: Int) -> Bool {
     return numberOfSlices % numberOfFriends == 0
 }
 
-var slices = 27
-var friends = 9
+var slices = 28
+var friends = 14
 
 var canDivideResult = canDivideSlices(numberOfSlices: slices, numberOfFriends: friends) == true ? "Sweet! That works out! Each friend can have \(slices / friends) slices." : "Bummer. That won't work. :("
 
