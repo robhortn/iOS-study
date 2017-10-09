@@ -75,6 +75,9 @@
                                         <state key="normal" title="Green">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="colorButtonWasPressedWithSender:" destination="dA2-XY-Cq1" eventType="touchUpInside" id="MAb-z0-auC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bub-rN-iOv">
                                         <rect key="frame" x="0.0" y="120.5" width="375" height="120.5"/>
@@ -83,6 +86,9 @@
                                         <state key="normal" title="Orange">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="colorButtonWasPressedWithSender:" destination="dA2-XY-Cq1" eventType="touchUpInside" id="Xcc-3y-f7P"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srr-pk-EVJ">
                                         <rect key="frame" x="0.0" y="241" width="375" height="121"/>
@@ -91,6 +97,9 @@
                                         <state key="normal" title="Blue">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="colorButtonWasPressedWithSender:" destination="dA2-XY-Cq1" eventType="touchUpInside" id="Vw9-er-I3c"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEh-ws-onM">
                                         <rect key="frame" x="0.0" y="362" width="375" height="120.5"/>
@@ -99,6 +108,9 @@
                                         <state key="normal" title="Pink">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="colorButtonWasPressedWithSender:" destination="dA2-XY-Cq1" eventType="touchUpInside" id="BEb-gu-N78"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="el6-nc-jPa">
                                         <rect key="frame" x="0.0" y="482.5" width="375" height="120.5"/>
@@ -107,6 +119,9 @@
                                         <state key="normal" title="Purple">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="colorButtonWasPressedWithSender:" destination="dA2-XY-Cq1" eventType="touchUpInside" id="neR-IQ-ofy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
