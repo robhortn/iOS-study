@@ -45,7 +45,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="he3-ia-VVB">
                             <color key="tintColor" red="0.52690557500000001" green="0.53212246190000001" blue="0.53212246190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="dA2-XY-Cq1" kind="show" id="zAX-Sk-XKE"/>
+                                <segue destination="dA2-XY-Cq1" kind="show" identifier="presentColorPickerVC" id="zAX-Sk-XKE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
