@@ -18,29 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="esI-q6-kiA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="esI-q6-kiA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="844-vs-tMh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="844-vs-tMh">
                                 <rect key="frame" x="139" y="285" width="96" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="RAA-Cd-USe"/>
+                                    <constraint firstAttribute="height" constant="96" id="VMn-eO-gGn"/>
+                                </constraints>
                                 <state key="normal" image="powerButton"/>
                                 <connections>
                                     <action selector="powerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQl-zo-IKm"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfT-bo-y06">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfT-bo-y06">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="WIi-3U-TbS">
-                                        <rect key="frame" x="0.0" y="487" width="375" height="207"/>
+                                        <rect key="frame" x="0.0" y="224" width="375" height="607"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="b3M-Yq-pOd">
-                                        <rect key="frame" x="0.0" y="305" width="375" height="362"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="b3M-Yq-pOd">
+                                        <rect key="frame" x="0.0" y="190" width="375" height="477"/>
                                     </imageView>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HUSTLE MODE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txr-kj-vbt">
                                         <rect key="frame" x="84" y="430" width="207" height="63"/>
@@ -58,9 +58,28 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.29411764705882354" green="0.46274509803921571" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="b3M-Yq-pOd" secondAttribute="bottom" id="beV-bH-LdY"/>
+                                    <constraint firstAttribute="trailing" secondItem="b3M-Yq-pOd" secondAttribute="trailing" id="pPz-et-yB2"/>
+                                    <constraint firstItem="b3M-Yq-pOd" firstAttribute="leading" secondItem="vfT-bo-y06" secondAttribute="leading" id="xMH-6o-DOe"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="esI-q6-kiA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0th-eC-2Ku"/>
+                            <constraint firstItem="vfT-bo-y06" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2Da-R6-BAv"/>
+                            <constraint firstItem="esI-q6-kiA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dno-MH-kPX"/>
+                            <constraint firstItem="844-vs-tMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="265" id="Ffq-fC-UZF"/>
+                            <constraint firstItem="844-vs-tMh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="LBx-zU-mqt"/>
+                            <constraint firstItem="vfT-bo-y06" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gD4-6T-Wa7"/>
+                            <constraint firstItem="esI-q6-kiA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ixv-ze-8hA"/>
+                            <constraint firstItem="vfT-bo-y06" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oAH-P0-r3b"/>
+                            <constraint firstItem="vfT-bo-y06" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pKF-KR-GN2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="844-vs-tMh" secondAttribute="trailing" constant="140" id="pNc-6C-fwc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="844-vs-tMh" secondAttribute="bottom" constant="286" id="sw7-kx-iZ5"/>
+                            <constraint firstItem="esI-q6-kiA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y5a-WW-FLH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
